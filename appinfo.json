@@ -1,0 +1,71 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        "location"
+    ],
+    "companyName": "Tony Erwin",
+    "longName": "Bluemix Where?",
+    "projectType": "pebblejs",
+    "resources": {
+        "media": [
+            {
+                "file": "images/menu_icon.png",
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/logo_splash.png",
+                "name": "IMAGE_LOGO_SPLASH",
+                "type": "png"
+            },
+            {
+                "file": "images/tile_splash.png",
+                "name": "IMAGE_TILE_SPLASH",
+                "type": "png"
+            },
+            {
+                "file": "fonts/UbuntuMono-Regular.ttf",
+                "name": "MONO_FONT_14",
+                "type": "font"
+            },
+            {
+                "file": "images/mapPinDithered16_inverse.png",
+                "name": "IMAGES_MAPPINDITHERED16_INVERSE_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/tile_splash.png",
+                "name": "IMAGES_TILE_SPLASH_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/tile_splashCentered.png",
+                "name": "IMAGES_TILE_SPLASHCENTERED_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/mapPinDithered28.png",
+                "name": "IMAGES_MAPPINDITHERED28_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/plainGlobe_small.png",
+                "name": "IMAGES_PLAINGLOBE_SMALL_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/bluemixGlobe_small.png",
+                "menuIcon": true,
+                "name": "IMAGES_BLUEMIXGLOBE_SMALL_PNG",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "Where?",
+    "uuid": "7418b140-9a57-4014-a7b8-bd5adceb4a93",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
