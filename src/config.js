@@ -5,8 +5,11 @@
  **************************************************/
 
 module.exports = {
-	//baseUrl: 'http://192.168.1.82:6001', //AWE TODO: Need note in article you can't just use localhost
+	// NOTE: If you change the baseUrl to do local development, you cannot use localhost. You need
+	// to use an IP address or host name available on your local network.
 	baseUrl: 'https://where.mybluemix.net',
+	//baseUrl: 'http://192.168.1.XX:YYYY', 
+	
 	apiRoot: 'api',
 	locationsRoot: 'locations',
 	
