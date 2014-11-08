@@ -2,7 +2,9 @@ bluemix-where-pebble
 ==================
 Overview
 --------
-TODO: Coming soon..
+Demo code for the [Pebble Smartwatch](https://getpebble.com/) version of the *Where?* app. The backend code is hosted and described in the separate [bluemix-where](https://github.com/aerwin/bluemix-where) project. The back-end server (which provides the REST API used by the Pebble client) is implemented using [Node.js](http://nodejs.org/) and the [Express](http://expressjs.com/) framework.
+
+The Pebble client is written in JavaScript leveraging [Pebble.js](http://pebble.github.io/pebblejs/) and using the [CloudPebble IDE](https://cloudpebble.net/).
 
 License
 ===================
