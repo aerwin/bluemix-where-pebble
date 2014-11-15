@@ -26,21 +26,34 @@ function postLocation(position, callback) {
 			deviceId: getDeviceId()
 		}
 	};
+	console.log('postLocation: About to post location to url = ' + url);
 	ajax(
 		ajaxArgs, 
 		function(response) {
+			console.log('postLocation: Received response = ' + JSON.stringify(response));
 			if (response && response.address) {
 				callback(null, response);
 			} else {
 				var err = {
 					data: response
 				};
-				errorView.show("Received a non-error response with unexpected data.", err);
+				errorView.show('Received a non-error response with unexpected data.', err);
 				callback(err, null);
 			}
 		},
 		function(err) {
-			errorView.show("Error occurred while retrieving address.", err);
+			var msg;
+			if (err) {
+				if (err.message) {
+					msg = err.message;
+				} else {
+					msg = 'An unknown error occurred.';
+				}
+			} else {
+				// This seems to happen when there is a timeout
+				msg = 'Timeout occurred. Please try again.';
+			}
+			errorView.show(msg, err);
 			callback(err, null);
 		}
 	);
@@ -54,9 +67,11 @@ function getLocations(callback) {
 		type: 'json', 
 		method: 'get'
 	};
+	console.log('getLocation: About to get locations from url = ' + url);
 	ajax(
 		ajaxArgs, 
 		function(response) {
+			console.log('getLocation: Received response length = ' + (response && response.length));
 			callback(null, response);
 		},
 		function(err) {

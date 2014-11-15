@@ -18,12 +18,11 @@ function handleError(message, err) {
 		errorCard = new UI.Card({
 			title: ' Where?',
 			icon: 'images/bluemixGlobe_small.png',
-			subtitle: 'Error!',
 			fullscreen: config.fullscreen,
 			scrollable: true
 		});
 	}
-	errorCard.body(message);
+	errorCard.body('Error:' + message);
 	errorCard.show();
 	
 	// Log the problem
