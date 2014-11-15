@@ -4,7 +4,7 @@
         "location"
     ],
     "companyName": "Tony Erwin",
-    "longName": "Bluemix Where?",
+    "longName": "Bluemix Where",
     "projectType": "pebblejs",
     "resources": {
         "media": [
@@ -61,7 +61,7 @@
             }
         ]
     },
-    "shortName": "Where?",
+    "shortName": "Where",
     "uuid": "7418b140-9a57-4014-a7b8-bd5adceb4a93",
     "versionCode": 1,
     "versionLabel": "1.0",
