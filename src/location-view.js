@@ -149,7 +149,7 @@ function showLocation(locationData) {
 
 	// Date/Time
 	var dateTime = new Date(locationData.time);
-	headerText.text(dateTime.toLocaleDateString());
+	headerText.text(getFormattedDate(dateTime));
 	dateTimeText.text(dateTime.toLocaleTimeString());
 	
 	// Fill in geolocation
@@ -177,6 +177,19 @@ function showLocation(locationData) {
 
 	// Show the window
 	mainWindow.show();
+}
+
+function getFormattedDate(date) {
+	// NOTE: This is NOT how you should do this if you want 
+	// to support internationalization. But, on the Pebble, it
+	// doesn't seem normal options for locale-specific date
+	// formatting work. So, I'm writing a bit of a hack to
+	// shorten longer (English) month names.
+	var str = date.toLocaleDateString();
+	var split = str.split(' ');
+	var month = split[0];
+	split[0] = month.length > 7 ? month.substring(0, 3) + '.' : month;
+	return split.join(' ');
 }
 
 // Export public functions
