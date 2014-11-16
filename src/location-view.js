@@ -169,7 +169,7 @@ function showLocation(locationData) {
 			endText.text(address.Country);
 		}		
 	} else {
-		addressHeader.text('Address:');
+		addressHeader.text('Address (' + config.searchDistance + ' ft):');
 		address1Text.text('No address nearby.');
 		cityText.text('');
 		endText.text('');

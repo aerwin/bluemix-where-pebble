@@ -13,6 +13,8 @@ module.exports = {
 	apiRoot: 'api',
 	locationsRoot: 'locations',
 	
+	searchDistance: 750,
+	
 	// Attempt to be able to control part of my app's "theme" from one place
 	fullscreen: true,
 	backgroundColor: 'black',

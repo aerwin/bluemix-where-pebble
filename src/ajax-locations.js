@@ -23,6 +23,7 @@ function postLocation(position, callback) {
 			heading: position.coords.heading,
 			speed: position.coords.speed,
 			
+			searchDistance: config.searchDistance,
 			deviceId: getDeviceId()
 		}
 	};

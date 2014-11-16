@@ -22,7 +22,7 @@ function handleError(message, err) {
 			scrollable: true
 		});
 	}
-	errorCard.body('Error:' + message);
+	errorCard.body('Error: ' + message);
 	errorCard.show();
 	
 	// Log the problem

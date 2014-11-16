@@ -58,7 +58,7 @@ function showPreviousLocations(locations) {
 			// Push the new menu entry
 			menuItems.push({
 				title: title,
-				icon: 'images/mapPinDithered28.png',
+				//icon: 'images/mapPinDithered28.png',
 				subtitle: subtitle,
 				locationData: location
 			});
