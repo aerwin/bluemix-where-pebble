@@ -166,7 +166,7 @@ function showLocation(locationData) {
 			endText.text(address.PostalCode || '');	
 		} else {
 			cityText.text(address.City + ' ' + address.PostalCode);
-			endText.text(address.Country);
+			endText.text(address.CountryName || address.Country);
 		}		
 	} else {
 		addressHeader.text('Address (' + config.searchDistance + ' ft):');
