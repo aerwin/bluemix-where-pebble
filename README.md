@@ -10,6 +10,7 @@ Tutorial
 A tutorial for using the code in this repository is available on IBM developerWorks:
 
 * [*Build a Where? app for web and Pebble users*](http://www.ibm.com/developerworks/library/mo-pebble-where-app/index.html)
+
 License
 ===================
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
