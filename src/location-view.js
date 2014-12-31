@@ -158,7 +158,7 @@ function showLocation(locationData) {
 	// Fill in address info
 	var address = locationData.address;
 	if (address && Object.keys(address).length) {
-		addressHeader.text('Address (' + address.Distance + ' ft):');
+		addressHeader.text('Address (' + address.Distance.toFixed(2) + ' ft):');
 		address1Text.text(address.AddressLine1 || '--');
 		if (address.Country === "United States of America" ||
 			address.Country === "USA") {
